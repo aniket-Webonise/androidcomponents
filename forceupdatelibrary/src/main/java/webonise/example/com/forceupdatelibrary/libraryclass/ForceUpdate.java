@@ -11,6 +11,7 @@ import webonise.example.com.forceupdatelibrary.utility.Constants;
 
 public class ForceUpdate {
 
+    private String showUpgrade;
 
     public Retrofit connectAndGetApiData(String url) {
         Retrofit retrofit = null;
@@ -25,7 +26,7 @@ public class ForceUpdate {
         return retrofit;
     }
 
-    public void getTheLatestVersionFromServer(String baseUrl, final int appversion){
+    public String getTheLatestVersionFromServer(String baseUrl, final int appversion){
        Retrofit retrofit= connectAndGetApiData(baseUrl);
 
 
@@ -38,7 +39,7 @@ public class ForceUpdate {
 
                 if(response != null && response.body() != null) {
 
-                    showForceUpdateDialog(response,appversion);
+                     showUpgrade=showForceUpdateDialog(response,appversion);
 
                 }
 
@@ -48,6 +49,8 @@ public class ForceUpdate {
 
             }
         });
+
+        return showUpgrade;
 
     }
 
