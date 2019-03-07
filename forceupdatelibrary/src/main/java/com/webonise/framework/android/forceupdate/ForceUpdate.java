@@ -23,7 +23,7 @@ public class ForceUpdate {
         return retrofit;
     }
 
-    public String getTheLatestVersionFromServer(String baseUrl, final int appversion){
+    public String checkAppVersion(String baseUrl, final int appversion){
        Retrofit retrofit= connectAndGetApiData(baseUrl);
 
 

@@ -3,13 +3,13 @@ apply from: 'maven-push.gradle'
 
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 28
 
 
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 26
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
@@ -31,5 +31,22 @@ android {
          implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
      }
 
+    task deleteJar(type: Delete) {
+        delete 'libs/jars/forceupdate.jar'
+    }
+
+    task createJar(type: Copy) {
+        from('build/intermediates/bundles/release/')
+        into('libs/jars/')
+        include('classes.jar')
+        rename('classes.jar', 'forceupdate.jar')
+    }
+
+    createJar.dependsOn(deleteJar, build)
+
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
 }
 
