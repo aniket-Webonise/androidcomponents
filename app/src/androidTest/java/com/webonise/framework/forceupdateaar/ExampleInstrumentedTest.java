@@ -1,4 +1,4 @@
-package webonise.example.com.forceupdateaar;
+package com.webonise.framework.forceupdateaar;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

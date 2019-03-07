@@ -1,10 +1,8 @@
-package webonise.example.com.forceupdatelibrary.model;
+package com.webonise.framework.android.forceupdate;
 
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
-import webonise.example.com.forceupdatelibrary.utility.Constants;
 
 public class AppUpgradeModel {
 
@@ -63,6 +61,13 @@ public class AppUpgradeModel {
         @SerializedName(Constants.PLATFORM)
         @Expose
         private String platform;
+        @SerializedName(Constants.MIN_VERSION)
+        @Expose
+        private int minimumVersion;
+        @SerializedName(Constants.Latest_VERSION)
+        @Expose
+        private int latestVersion;
+
 
         public int getMinimumVersion() {
             return minimumVersion;
@@ -79,13 +84,6 @@ public class AppUpgradeModel {
         public void setLatestVersion(int latestVersion) {
             this.latestVersion = latestVersion;
         }
-
-        @SerializedName(Constants.MIN_VERSION)
-        @Expose
-        private int minimumVersion;
-        @SerializedName(Constants.Latest_VERSION)
-        @Expose
-        private int latestVersion;
 
 
         public String getPlatform() {

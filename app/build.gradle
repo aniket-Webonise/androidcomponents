@@ -4,7 +4,7 @@ apply plugin: 'com.bmuschko.nexus'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "webonise.example.com.forceupdateaar"
+        applicationId "com.webonise.framework.android"
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 1

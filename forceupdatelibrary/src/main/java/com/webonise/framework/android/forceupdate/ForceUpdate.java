@@ -1,13 +1,10 @@
-package webonise.example.com.forceupdatelibrary.libraryclass;
+package com.webonise.framework.android.forceupdate;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-import webonise.example.com.forceupdatelibrary.interfaceretrofit.ForceUpgardeApiService;
-import webonise.example.com.forceupdatelibrary.model.AppUpgradeModel;
-import webonise.example.com.forceupdatelibrary.utility.Constants;
 
 public class ForceUpdate {
 

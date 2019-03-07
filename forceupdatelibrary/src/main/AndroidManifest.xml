@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="webonise.example.com.forceupdatelibrary" >
+    package="com.webonise.framework.android" >
     <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
