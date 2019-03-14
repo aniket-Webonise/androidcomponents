@@ -32,11 +32,11 @@ def getSnapshotRepositoryUrl() {
 }
 
 def getRepositoryUsername() {
-    return hasProperty('NEXUS_USERNAME') ? NEXUS_USERNAME : "aniketk"
+    return hasProperty('NEXUS_USERNAME') ? NEXUS_USERNAME : "tejasa"
 }
 
 def getRepositoryPassword() {
-    return hasProperty('NEXUS_PASSWORD') ? NEXUS_PASSWORD : "KAniket321#"
+    return hasProperty('NEXUS_PASSWORD') ? NEXUS_PASSWORD : "ATejas321#"
 }
 
 afterEvaluate { project ->
@@ -45,9 +45,9 @@ afterEvaluate { project ->
             mavenDeployer {
                 beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
 
-                pom.groupId = GROUP
-                pom.artifactId = POM_ARTIFACT_ID
-                pom.version = VERSION_NAME
+                pom.groupId = 'com.webonise.framework.android'
+                pom.artifactId = 'force-update-lib'
+                pom.version = '1.0.0'
 
                 repository(url: getReleaseRepositoryUrl()) {
                     authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
