@@ -1,4 +1,4 @@
-package webonise.example.com.forceupdatelibrary;
+package com.webonise.framework.forceupdatelibrary;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package webonise.example.com.forceupdateaar;
+package com.webonise.framework.forceupdateaar;
 
 import org.junit.Test;
 

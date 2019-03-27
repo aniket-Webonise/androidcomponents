@@ -1,4 +1,4 @@
-package webonise.example.com.forceupdatelibrary.utility;
+package com.webonise.framework.android.forceupdate;
 
 
 public class Constants {
