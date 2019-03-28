@@ -4,7 +4,7 @@ package com.webonise.framework.android.forceupdate;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class AppUpgradeModel {
+public class  AppUpgradeModel {
 
 
     @SerializedName("data")
