@@ -1,13 +1,17 @@
 package com.webonise.framework.android.forceupdate.xmlutilityparser;
 
 import android.text.TextUtils;
+
+
+import com.webonise.framework.android.forceupdate.xmlutilityparser.model.ConfigueData;
+
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 import java.io.File;
 import java.io.FileInputStream;
 
-import xmlutilityparser.framework.webonise.com.xmlutilityparserlibrary.xmlutilityparser.model.ConfigueData;
+
 
 
 public class XMLUtilityParser {
