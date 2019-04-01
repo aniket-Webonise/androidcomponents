@@ -39,7 +39,7 @@ android {
         from('build/intermediates/bundles/release/')
         into('libs/jars/')
         include('classes.jar')
-        rename('classes.jar', 'forceupdate.jar')
+        rename('classes.jar', 'androidcomponent.jar')
     }
 
     createJar.dependsOn(deleteJar, build)
