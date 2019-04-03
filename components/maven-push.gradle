@@ -46,7 +46,7 @@ afterEvaluate { project ->
                 beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
 
                 pom.groupId = 'com.webonise.framework.android'
-                pom.artifactId = 'force-update-lib'
+                pom.artifactId = 'android-component-lib'
                 pom.version = '1.0.0'
 
                 repository(url: getReleaseRepositoryUrl()) {
